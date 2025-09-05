@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
+    --accent-color: #f94877;
+    --background-color: #fdfdff;
+    --text-color: #333;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+    font-weight: 600;
+    color: white !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.btn-primary, .btn-success {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover, .btn-success:hover {
+    background-color: #d6335e;
+    transform: translateY(-2px);
+}
+
+
+#sell form {
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
