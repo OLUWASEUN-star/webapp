@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Gymify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100" style="background: linear-gradient(90deg, #6a11cb, #2575fc);">
+    <div class="card p-4 shadow-lg" style="min-width: 350px; max-width: 400px;">
+        <h2 class="mb-4 text-center">Login to Gymify</h2>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+        </form>
+        <div class="text-center mb-2">or</div>
+        <button class="btn btn-light w-100 mb-2" id="googleLogin"><img src="https://img.icons8.com/color/16/000000/google-logo.png" class="me-2">Continue with Google</button>
+        <button class="btn btn-dark w-100 mb-3" id="appleLogin"><img src="https://img.icons8.com/ios-filled/16/ffffff/mac-os.png" class="me-2">Continue with Apple</button>
+        <div class="text-center">
+            <span>Don't have an account? <a href="signup.html">Sign up</a></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
